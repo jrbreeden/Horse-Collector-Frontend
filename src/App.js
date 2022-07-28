@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import axios from "axios"
+import axios from "axios";
 import {useState, useEffect} from "react"
 
 function App() {
@@ -17,6 +17,7 @@ const [data, setData] = useState(null)
             details : data    
         });
     })
+    
     .catch(err => {})
 },[])
   return (
