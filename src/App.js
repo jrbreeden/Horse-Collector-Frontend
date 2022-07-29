@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import axios from "axios";
-import {useState, useEffect} from "react"
+import {useState, useEffect} from "react";
+import Routes from './Routes'
 
 function App() {
 const [data, setData] = useState(null)
@@ -17,12 +18,12 @@ const [data, setData] = useState(null)
             details : data    
         });
     })
-    
+
     .catch(err => {})
 },[])
   return (
     <div className="App">
-      <h1>Horse Collector</h1>
+      <Routes />
     </div>
   );
 }
